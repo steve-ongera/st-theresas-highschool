@@ -1,0 +1,151 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+            <h1 class="display-3 animated slideInDown">Server Error</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#!">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">500 Error</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Video Start -->
+    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-11">
+                    <div class="h-100 py-5 d-flex align-items-center">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h3 class="ms-5 mb-0">St. Theresa's Nyangusu Girls - Excellence in Education and Character Formation.
+                        </h3>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1">
+                    <div class="h-100 w-100 bg-secondary d-flex align-items-center justify-content-center">
+                        <span class="text-white" style="transform: rotate(-90deg);">Scroll Down</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">School Introduction Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- 500 Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <i class="bi bi-gear-wide-connected display-1 text-primary"></i>
+                    <h1 class="display-1">500</h1>
+                    <h1 class="mb-4">Internal Server Error</h1>
+                    <p class="mb-4">We apologize for the inconvenience. Our website is currently experiencing technical difficulties. Our technical team at St. Theresa's Nyangusu Girls has been notified and is working to resolve this issue.</p>
+                    <p class="mb-4">Please try again in a few moments. If the problem persists, you can:</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                        <a class="btn btn-outline-secondary py-2 px-3" href="javascript:location.reload()">
+                            <i class="fa fa-refresh me-2"></i>Refresh Page
+                        </a>
+                        <a class="btn btn-outline-secondary py-2 px-3" href="{% url 'contact' %}">
+                            <i class="fa fa-phone me-2"></i>Contact Support
+                        </a>
+                        <a class="btn btn-outline-secondary py-2 px-3" href="mailto:info@sttheresasnyangusu.ac.ke">
+                            <i class="fa fa-envelope me-2"></i>Email Us
+                        </a>
+                    </div>
+                    <a class="btn btn-primary py-3 px-4" href="{% url 'home' %}">
+                        <i class="fa fa-home me-2"></i>Return to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 500 End -->
+
+    <!-- Support Info Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h2 class="display-6 mb-4">Need Immediate Assistance?</h2>
+                <p class="mb-0">If you need urgent information about the school, please contact us directly.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="bg-white rounded p-4 h-100">
+                        <i class="fa fa-phone fa-3x text-primary mb-3"></i>
+                        <h5 class="mb-3">Call Us</h5>
+                        <p class="mb-2">School Office</p>
+                        <p class="text-primary">+254 XXX XXX XXX</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="bg-white rounded p-4 h-100">
+                        <i class="fa fa-envelope fa-3x text-primary mb-3"></i>
+                        <h5 class="mb-3">Email Us</h5>
+                        <p class="mb-2">General Inquiries</p>
+                        <p class="text-primary">info@sttheresasnyangusu.ac.ke</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="bg-white rounded p-4 h-100">
+                        <i class="fa fa-clock fa-3x text-primary mb-3"></i>
+                        <h5 class="mb-3">Office Hours</h5>
+                        <p class="mb-2">Monday - Friday</p>
+                        <p class="text-primary">8:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Support Info End -->
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Stay Connected with St. Theresa's</h1>
+                    <div class="position-relative w-100 mb-2">
+                        <input class="form-control border-0 w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email"
+                            style="height: 60px;">
+                        <button type="button"
+                            class="btn btn-lg-square shadow-none position-absolute top-0 end-0 mt-2 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <p class="mb-0">Get updates on school activities, academic programs, and important announcements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+{% endblock %}

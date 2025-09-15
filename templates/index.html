@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}St Teresa's Nyangusu Girls - Excellence in Education{% endblock %}
+
+{% block content %}
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-text">
+                            <h1 class="display-1 text-uppercase mb-3">Empowering Young Women Through Education</h1>
+                            <p class="fs-5 mb-5">At St. Teresa's Nyangusu Girls, we nurture academic excellence, character development, and leadership skills to prepare our students for a bright future.</p>
+                            <div class="d-flex">
+                                <a class="btn btn-primary py-3 px-4 me-3" href="{% url 'index' %}">Apply Now</a>
+                                <a class="btn btn-secondary py-3 px-4" href="{% url 'about' %}">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="carousel-img">
+                            <img class="w-100" src="{% static 'assets/img/carousel-1.jpg' %}" alt="Students">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-text">
+                            <h1 class="display-1 text-uppercase mb-3">Building Tomorrow's Leaders Today</h1>
+                            <p class="fs-5 mb-5">Our comprehensive education program focuses on academic achievement, moral values, and practical skills to ensure our students become confident, capable leaders in their communities.</p>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary py-3 px-4 me-3" href="{% url 'index' %}">Join Us</a>
+                                <a class="btn btn-secondary py-3 px-4" href="{% url 'index' %}">Our Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="carousel-img">
+                            <img class="w-100" src="{% static 'assets/img/carousel-2.jpg' %}" alt="School Activities">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Video Start -->
+    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-11">
+                    <div class="h-100 py-5 d-flex align-items-center">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h3 class="ms-5 mb-0">Experience the St. Teresa's Nyangusu difference - where education meets excellence.</h3>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1">
+                    <div class="h-100 w-100 bg-secondary d-flex align-items-center justify-content-center">
+                        <span class="text-white" style="transform: rotate(-90deg);">Scroll Down</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">School Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="about-img">
+                        <img class="img-fluid w-100" src="{% static 'assets/img/1738774459371.jfif' %}" alt="About Us">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Nurturing Excellence, Inspiring Dreams</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">St. Teresa's Nyangusu Girls School has been a beacon of educational excellence in Murang'a County, committed to developing young women who are academically competent, morally upright, and socially responsible.</p>
+                    <div class="row g-4 pt-2">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="h-100">
+                                <h3>Our Mission</h3>
+                                <p>To provide quality education that empowers young women to become leaders and positive change agents in society.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>Academic Excellence</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i>Character Development</p>
+                                <p class="text-dark mb-0"><i class="fa fa-check text-primary me-2"></i>Leadership Training</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 bg-primary p-4 text-center">
+                                <p class="fs-5 text-dark">Join our community of learners and discover your potential at St. Teresa's Nyangusu.</p>
+                                <a class="btn btn-secondary py-2 px-4" href="#">Apply Today</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="service-title">
+                        <h1 class="display-6 mb-4">What We Offer Our Students</h1>
+                        <p class="fs-5 mb-0">Comprehensive programs designed to develop well-rounded, confident young women.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 col-xl-9">
+                    <div class="row g-5">
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-book fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Academic Programs</h3>
+                                <p class="mb-2">Comprehensive curriculum covering sciences, humanities, and technical subjects to prepare students for higher education and careers.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-users fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Leadership Development</h3>
+                                <p class="mb-2">Programs focused on developing leadership skills, confidence, and the ability to make positive contributions to society.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-heart fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Moral Guidance</h3>
+                                <p class="mb-2">Character education rooted in Christian values, emphasizing integrity, compassion, and service to others.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-utensils fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Nutrition & Wellness</h3>
+                                <p class="mb-2">Balanced meals and health programs to support physical development and overall student wellness.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-graduation-cap fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Career Guidance</h3>
+                                <p class="mb-2">Comprehensive career counseling and guidance to help students make informed decisions about their future paths.</p>
+                                <a href="#!">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="service-item h-100">
+                                <div class="btn-square bg-light mb-4">
+                                    <i class="fa fa-home fa-2x text-secondary"></i>
+                                </div>
+                                <h3>Boarding Facilities</h3>
+                                <p class="mb-2">Safe, comfortable dormitories that provide a conducive environment for learning and personal development.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4 h-100">
+                                    <i class="fa fa-users fa-3x text-secondary mb-3"></i>
+                                    <h1 class="display-5 mb-0" data-toggle="counter-up">45</h1>
+                                    <span class="text-dark">Teaching Staff</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4 h-100">
+                                    <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                    <h1 class="display-5 text-white mb-0" data-toggle="counter-up">15</h1>
+                                    <span class="text-white">Years of Excellence</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4 h-100">
+                                    <i class="fa fa-graduation-cap fa-3x text-primary mb-3"></i>
+                                    <h1 class="display-5 text-white mb-0" data-toggle="counter-up">800</h1>
+                                    <span class="text-white">Current Students</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4 h-100">
+                                    <i class="fa fa-star fa-3x text-secondary mb-3"></i>
+                                    <h1 class="display-5 mb-0" data-toggle="counter-up">95</h1>
+                                    <span class="text-dark">% Success Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section-title bg-white text-start text-primary pe-3">Why Choose Us!</p>
+                    <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">Why Parents Trust St. Teresa's Nyangusu</h1>
+                    <p class="mb-4 wow fadeIn" data-wow-delay="0.3s">We are committed to providing quality education that develops the whole person - intellectually, morally, physically, and socially. Our holistic approach ensures students are well-prepared for future challenges.</p>
+                    <p class="text-dark wow fadeIn" data-wow-delay="0.4s"><i class="fa fa-check text-primary me-2"></i>Experienced and dedicated teaching staff</p>
+                    <p class="text-dark wow fadeIn" data-wow-delay="0.5s"><i class="fa fa-check text-primary me-2"></i>Modern facilities and learning resources</p>
+                    <p class="text-dark wow fadeIn" data-wow-delay="0.6s"><i class="fa fa-check text-primary me-2"></i>Strong emphasis on moral values and character</p>
+                    <div class="d-flex mt-4 wow fadeIn" data-wow-delay="0.7s">
+                        <a class="btn btn-primary py-3 px-4 me-3" href="#">Apply Now</a>
+                        <a class="btn btn-secondary py-3 px-4" href="{% url 'contact' %}">Visit Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner py-5">
+        <div class="container">
+            <div class="banner-inner bg-light p-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 py-5 text-center">
+                        <h1 class="display-6 wow fadeIn" data-wow-delay="0.3s">Join Our School Community and Shape Your Future!</h1>
+                        <p class="fs-5 mb-4 wow fadeIn" data-wow-delay="0.5s">At St. Teresa's Nyangusu Girls, we welcome students who are ready to embrace learning, grow in character, and become leaders in their communities.</p>
+                        <div class="d-flex justify-content-center wow fadeIn" data-wow-delay="0.7s">
+                            <a class="btn btn-primary py-3 px-4 me-3" href="#">Apply Today</a>
+                            <a class="btn btn-secondary py-3 px-4" href="{% url 'contact' %}">Schedule Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+   
+{% endblock %}

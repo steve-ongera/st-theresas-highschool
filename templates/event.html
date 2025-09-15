@@ -1,0 +1,246 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-4">
+            <h1 class="display-3 animated slideInDown">Events</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#!">Pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Events</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Video Start -->
+    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-11">
+                    <div class="h-100 py-5 d-flex align-items-center">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h3 class="ms-5 mb-0">Building memories, celebrating achievements, and fostering excellence together.
+                        </h3>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1">
+                    <div class="h-100 w-100 bg-secondary d-flex align-items-center justify-content-center">
+                        <span class="text-white" style="transform: rotate(-90deg);">Scroll Down</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">School Events Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">School Events</p>
+                <h1 class="display-6 mb-4">Join Our Vibrant School Community</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="img/event-1.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Science & Technology Fair</a>
+                        <p>Students showcase innovative projects and compete in various STEM categories, fostering creativity and scientific thinking.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>8:00 AM - 4:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>March 15 - March 16</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>School Main Hall, Nyangusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="img/event-2.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Annual Sports Day</a>
+                        <p>A celebration of athletic excellence featuring track and field events, team sports, and inter-house competitions.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>7:00 AM - 5:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>April 20 - April 21</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>School Sports Ground, Nyangusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="img/event-3.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Drama & Music Festival</a>
+                        <p>Students perform theatrical productions, musical performances, and poetry recitals showcasing their artistic talents.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>6:00 PM - 9:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>May 10 - May 12</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>School Auditorium, Nyangusu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="img/event-1.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Career Guidance Week</a>
+                        <p>Professional speakers and alumni share career insights, helping students make informed decisions about their future paths.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>9:00 AM - 3:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>June 5 - June 9</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>School Library & Classrooms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="img/event-2.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Parents' Day & Prize Giving</a>
+                        <p>Annual celebration recognizing academic achievements, extracurricular excellence, and strengthening the school-parent partnership.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>10:00 AM - 4:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>July 15</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>School Assembly Ground</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="event-item h-100 p-4">
+                        <img class="img-fluid w-100 mb-4" src="img/event-3.jpg" alt="">
+                        <a href="#!" class="h3 d-inline-block">Leadership & Mentorship Summit</a>
+                        <p>Student leaders participate in workshops and seminars designed to develop leadership skills and mentoring capabilities.</p>
+                        <div class="bg-light p-4">
+                            <p class="mb-1"><i class="fa fa-clock text-primary me-2"></i>8:00 AM - 5:00 PM</p>
+                            <p class="mb-1"><i class="fa fa-calendar-alt text-primary me-2"></i>August 25 - August 26</p>
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>School Conference Room</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner py-5">
+        <div class="container">
+            <div class="banner-inner bg-light p-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 py-5 text-center">
+                        <h1 class="display-6 wow fadeIn" data-wow-delay="0.3s">Our Doors Are Always Open to Students Who Want to Participate and Excel!</h1>
+                        <p class="fs-5 mb-4 wow fadeIn" data-wow-delay="0.5s">Through active participation in school events, our students develop confidence, leadership skills, and lasting friendships while creating memorable experiences that shape their character.</p>
+                        <div class="d-flex justify-content-center wow fadeIn" data-wow-delay="0.7s">
+                            <a class="btn btn-primary py-3 px-4 me-3" href="#!">Join Activities</a>
+                            <a class="btn btn-secondary py-3 px-4" href="#!">View Calendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Upcoming Events Calendar Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="section-title bg-white text-center text-primary px-3">Academic Calendar</p>
+                <h2 class="display-6 mb-4">Important Dates to Remember</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white p-4 rounded text-center h-100">
+                        <div class="bg-primary text-white rounded mb-3 p-3">
+                            <h3 class="mb-0">SEP</h3>
+                            <h1 class="display-6 mb-0">30</h1>
+                        </div>
+                        <h5>End of Term 3</h5>
+                        <p class="text-muted">Last day of classes for Term 3, 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white p-4 rounded text-center h-100">
+                        <div class="bg-secondary text-white rounded mb-3 p-3">
+                            <h3 class="mb-0">JAN</h3>
+                            <h1 class="display-6 mb-0">15</h1>
+                        </div>
+                        <h5>New Term Opening</h5>
+                        <p class="text-muted">Start of Term 1, 2026</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white p-4 rounded text-center h-100">
+                        <div class="bg-primary text-white rounded mb-3 p-3">
+                            <h3 class="mb-0">FEB</h3>
+                            <h1 class="display-6 mb-0">14</h1>
+                        </div>
+                        <h5>Valentine's Charity Drive</h5>
+                        <p class="text-muted">Community service and fundraising event</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="bg-white p-4 rounded text-center h-100">
+                        <div class="bg-secondary text-white rounded mb-3 p-3">
+                            <h3 class="mb-0">MAR</h3>
+                            <h1 class="display-6 mb-0">8</h1>
+                        </div>
+                        <h5>Women's Day Celebration</h5>
+                        <p class="text-muted">Celebrating achievements of women leaders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Upcoming Events Calendar End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-4">Subscribe to Our Events Newsletter</h1>
+                    <div class="position-relative w-100 mb-2">
+                        <input class="form-control border-0 w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email"
+                            style="height: 60px;">
+                        <button type="button"
+                            class="btn btn-lg-square shadow-none position-absolute top-0 end-0 mt-2 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <p class="mb-0">Stay updated with upcoming events, activities, and important school announcements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+{% endblock %}

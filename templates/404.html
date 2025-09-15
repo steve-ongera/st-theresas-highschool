@@ -8,8 +8,8 @@
             <h1 class="display-3 animated slideInDown">Page Not Found</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Pages</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'index'%}">Home</a></li>
+                   
                     <li class="breadcrumb-item active" aria-current="page">404 Error</li>
                 </ol>
             </nav>
@@ -78,7 +78,7 @@
                         <a class="btn btn-outline-primary py-2 px-3" href="{% url 'about' %}">About Us</a>
                         <a class="btn btn-outline-primary py-2 px-3" href="{% url 'contact' %}">Contact</a>
                     </div>
-                    <a class="btn btn-primary py-3 px-4" href="{% url 'home' %}">Return to Home</a>
+                    <a class="btn btn-primary py-3 px-4" href="{% url 'index' %}">Return to Home</a>
                 </div>
             </div>
         </div>

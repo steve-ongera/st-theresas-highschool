@@ -8,8 +8,8 @@
             <h1 class="display-3 animated slideInDown">Server Error</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#!">Pages</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'index'%}">Home</a></li>
+                   
                     <li class="breadcrumb-item active" aria-current="page">500 Error</li>
                 </ol>
             </nav>
@@ -82,7 +82,7 @@
                             <i class="fa fa-envelope me-2"></i>Email Us
                         </a>
                     </div>
-                    <a class="btn btn-primary py-3 px-4" href="{% url 'home' %}">
+                    <a class="btn btn-primary py-3 px-4" href="{% url 'index' %}">
                         <i class="fa fa-home me-2"></i>Return to Home
                     </a>
                 </div>
